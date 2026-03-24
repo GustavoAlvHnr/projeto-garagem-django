@@ -12,7 +12,7 @@ from rest_framework_simplejwt.views import (
     TokenVerifyView,
 )
 
-from core.views import AcessoriosViewSet, CorViewSet, ModeloViewSet, UserRegistrationView, UserViewSet
+from core.views import AcessoriosViewSet, CorViewSet, ModeloViewSet, UserRegistrationView, UserViewSet, VeiculoViewSet
 
 router = DefaultRouter()
 
@@ -20,6 +20,7 @@ router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'acessorios', AcessoriosViewSet, basename='acessorios')
 router.register(r'modelos', ModeloViewSet, basename='modelos')
 router.register(r'cores', CorViewSet, basename='cores')
+router.register(r'veiculos', VeiculoViewSet, basename='veiculos')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
