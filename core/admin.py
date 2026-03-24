@@ -54,3 +54,4 @@ class UserAdmin(BaseUserAdmin):
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.acessorios)
 admin.site.register(models.cor)
+admin.site.register(models.modelo)
